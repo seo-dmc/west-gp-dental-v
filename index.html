@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>West Grande Prairie Dental – Dentist in Grande Prairie, AB | (780) 833-8600</title>
-  <meta name="description"
-    content="West Grande Prairie Dental offers professional dental care including Invisalign, dental implants, emergency dentistry, teeth whitening, and more in Grande Prairie, AB. Call (780) 833-8600." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta
+    content="West Grande Prairie Dental offers professional dental care including Invisalign, dental implants, emergency dentistry, teeth whitening, and more in Grande Prairie, AB. Call (780) 833-8600."
+    name="description" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Maven+Pro:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&amp;family=Maven+Pro:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Dentist","name":"West Grande Prairie Dental",
    "telephone":"(780) 833-8600","address":{"@type":"PostalAddress","streetAddress":"11502 Westgate Dr #106",
@@ -60,14 +62,20 @@
     .dd2 {
       display: none;
       position: absolute;
-      top: calc(100% + 6px);
+      top: 100%;
+      /* Instead of margin, we use padding to create the invisible bridge */
+      padding-top: 16px;
       left: 0;
-      background: #fff;
       min-width: 220px;
+      z-index: 999;
+    }
+
+    .dd-inner,
+    .dd2-inner {
+      background: #fff;
       box-shadow: 0 8px 28px rgba(0, 0, 0, .12);
       border-radius: 12px;
       padding: 8px 0;
-      z-index: 999;
       max-height: 360px;
       overflow-y: auto;
     }
@@ -78,7 +86,9 @@
     }
 
     .dd a,
-    .dd2 a {
+    .dd2 a,
+    .dd-inner a,
+    .dd2-inner a {
       display: block;
       padding: 9px 18px;
       font-size: 13.5px;
@@ -86,7 +96,9 @@
     }
 
     .dd a:hover,
-    .dd2 a:hover {
+    .dd2 a:hover,
+    .dd-inner a:hover,
+    .dd2-inner a:hover {
       background: #f0fafb;
       color: var(--teal);
     }
@@ -768,94 +780,96 @@
 </head>
 
 <body>
-
   <!-- TOP BAR -->
   <div style="background:var(--blue);color:rgba(255,255,255,.85);font-size:13px;padding:6px 20px;">
     <div style="max-width:1220px;margin:0 auto;display:flex;gap:28px;align-items:center;">
       <span><i class="fa-solid fa-envelope" style="color:var(--teal);margin-right:6px;"></i>grande
         prairie@westgrandeprairiedental.com</span>
-      <span><i class="fa-solid fa-location-dot" style="color:var(--teal);margin-right:6px;"></i>11502 Westgate Dr #106,
+      <span><i class="fa-solid fa-location-dot" style="color:var(--teal);margin-right:6px;"></i>11502 <a
+          href="areas-we-serve/westgate-T8V 4K5.html"
+          style="color: #26c6da; font-weight: 600; text-decoration: underline;">Westgate</a> Dr #106,
         Grande Prairie, AB T8V 4E9</span>
       <span style="margin-left:auto;"><i class="fa-solid fa-star" style="color:#ffd700;margin-right:4px;"></i>Licensed
-        &amp; Insured &nbsp;|&nbsp; <i class="fa-solid fa-clock" style="color:var(--teal);margin-right:4px;"></i>24/7
+        &amp; Insured  |  <i class="fa-solid fa-clock" style="color:var(--teal);margin-right:4px;"></i>24/7
         Emergency Service</span>
     </div>
   </div>
-
   <!-- HEADER -->
   <header style="background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:1000;">
-    <div
-      style="max-width:1220px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:72px;">
+    <div class="header-container"
+      style="max-width:1300px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:72px; white-space:nowrap;">
       <a href="index.html" style="font-family:'Maven Pro',sans-serif;font-size:22px;font-weight:700;">
-        <svg style="vertical-align:middle;margin-right:8px;" width="34" height="34" viewBox="0 0 38 38" fill="none">
-          <circle cx="19" cy="19" r="19" fill="#26c6da" opacity=".12" />
+        <svg fill="none" height="34" style="vertical-align:middle;margin-right:8px;" viewbox="0 0 38 38" width="34">
+          <circle cx="19" cy="19" fill="#26c6da" opacity=".12" r="19"></circle>
           <path
             d="M13 10c-2.5 0-5 2-5 5.5 0 5.5 5 12.5 6.5 12.5.5 0 1-1.5 1.5-3.5.5 2 1 3.5 1.5 3.5 1.5 0 6.5-7 6.5-12.5C24 12 21.5 10 19 10c-1.2 0-2.2.6-3 .6S14.2 10 13 10z"
-            fill="#26c6da" />
+            fill="#26c6da"></path>
           <path
             d="M13 10c-2.5 0-5 2-5 5.5 0 5.5 5 12.5 6.5 12.5.5 0 1-1.5 1.5-3.5.5 2 1 3.5 1.5 3.5 1.5 0 6.5-7 6.5-12.5C24 12 21.5 10 19 10c-1.2 0-2.2.6-3 .6S14.2 10 13 10z"
-            stroke="#115278" stroke-width="1.5" fill="none" />
+            fill="none" stroke="#115278" stroke-width="1.5"></path>
         </svg>
         <span style="color:var(--blue);">West GP</span><span style="color:var(--teal);">Dental</span>
       </a>
-
       <nav class="nav-desktop" style="display:flex;align-items:center;gap:28px;">
         <a href="index.html" style="color:var(--blue);font-weight:600;font-size:14px;">Home</a>
         <div class="nav-item" style="position:relative;">
           <span style="color:var(--blue);font-weight:600;font-size:14px;cursor:pointer;">Services <i
               class="fa-solid fa-chevron-down" style="font-size:10px;"></i></span>
           <div class="dd">
-            <a href="services/invisalign-grande-prairie.html">Invisalign</a>
-            <a href="services/dental-implants-grande-prairie.html">Dental Implants</a>
-            <a href="services/emergency-dentist-grande-prairie.html">Emergency Dentist</a>
-            <a href="services/family-dentist-grande-prairie.html">Family Dentist</a>
-            <a href="services/teeth-whitening-grande-prairie.html">Teeth Whitening</a>
-            <a href="services/root-canal-grande-prairie.html">Root Canal</a>
-            <a href="services/dental-veneers-grande-prairie.html">Dental Veneers</a>
-            <a href="services/dentures-grande-prairie.html">Dentures</a>
-            <a href="services/sedation-dentistry-grande-prairie.html">Sedation Dentistry</a>
-            <a href="services/wisdom-teeth-removal-grande-prairie.html">Wisdom Teeth Removal</a>
-            <a href="services/dental-crowns-grande-prairie.html">Dental Crowns</a>
-            <a href="services/childrens-dentist-grande-prairie.html">Childrens Dentist</a>
-            <a href="services/cosmetic-dentist-grande-prairie.html">Cosmetic Dentist</a>
-            <a href="services/botox-grande-prairie.html">Botox</a>
-            <a href="services/tmj-treatment-grande-prairie.html">TMJ Treatment</a>
-            <a href="services/dental-bridges-grande-prairie.html">Dental Bridges</a>
-            <a href="services/sleep-apnea-dentist-grande-prairie.html">Sleep Apnea</a>
-            <a href="services/mouth-guards-grande-prairie.html">Mouth Guards</a>
-            <a href="services/dental-hygiene-grande-prairie.html">Dental Hygiene</a>
-            <a href="services/all-on-4-dental-implants-grande-prairie.html">All-on-4 Implants</a>
+            <div class="dd-inner">
+              <a href="services/invisalign-grande-prairie.html">Invisalign</a>
+              <a href="services/dental-implants-grande-prairie.html">Dental Implants</a>
+              <a href="services/emergency-dentist-grande-prairie.html">Emergency Dentist</a>
+              <a href="services/family-dentist-grande-prairie.html">Family Dentist</a>
+              <a href="services/teeth-whitening-grande-prairie.html">Teeth Whitening</a>
+              <a href="services/root-canal-grande-prairie.html">Root Canal</a>
+              <a href="services/dental-veneers-grande-prairie.html">Dental Veneers</a>
+              <a href="services/dentures-grande-prairie.html">Dentures</a>
+              <a href="services/sedation-dentistry-grande-prairie.html">Sedation Dentistry</a>
+              <a href="services/wisdom-teeth-removal-grande-prairie.html">Wisdom Teeth Removal</a>
+              <a href="services/dental-crowns-grande-prairie.html">Dental Crowns</a>
+              <a href="services/childrens-dentist-grande-prairie.html">Childrens Dentist</a>
+              <a href="services/cosmetic-dentist-grande-prairie.html">Cosmetic Dentist</a>
+              <a href="services/botox-grande-prairie.html">Botox</a>
+              <a href="services/tmj-treatment-grande-prairie.html">TMJ Treatment</a>
+              <a href="services/dental-bridges-grande-prairie.html">Dental Bridges</a>
+              <a href="services/sleep-apnea-dentist-grande-prairie.html">Sleep Apnea</a>
+              <a href="services/mouth-guards-grande-prairie.html">Mouth Guards</a>
+              <a href="services/dental-hygiene-grande-prairie.html">Dental Hygiene</a>
+              <a href="services/all-on-4-dental-implants-grande-prairie.html">All-on-4 Implants</a>
+            </div>
           </div>
         </div>
         <div class="nav-item" style="position:relative;">
           <span style="color:var(--blue);font-weight:600;font-size:14px;cursor:pointer;">Areas <i
               class="fa-solid fa-chevron-down" style="font-size:10px;"></i></span>
           <div class="dd2">
-            <a href="areas-we-serve/downtown-T8V 3A3.html">Downtown</a>
-            <a href="areas-we-serve/westgate-T8V 4K5.html">Westgate</a>
-            <a href="areas-we-serve/eastgate-T8V 6H2.html">Eastgate</a>
-            <a href="areas-we-serve/southgate-T8V 7M9.html">Southgate</a>
-            <a href="areas-we-serve/northgate-T8V 2B1.html">Northgate</a>
-            <a href="areas-we-serve/riverheights-T8V 5E4.html">Riverheights</a>
-            <a href="areas-we-serve/montrose-T8V 1G7.html">Montrose</a>
-            <a href="areas-we-serve/elmwood-T8V 3J2.html">Elmwood</a>
-            <a href="areas-we-serve/braeside-T8V 4P8.html">Braeside</a>
-            <a href="areas-we-serve/crystal-heights-T8V 6L5.html">Crystal Heights</a>
-            <a href="areas-we-serve/highland-park-T8V 8N3.html">Highland Park</a>
-            <a href="areas-we-serve/avondale-T8V 2H6.html">Avondale</a>
-            <a href="areas-we-serve/country-club-estates-T8V 7K1.html">Country Club Estates</a>
-            <a href="areas-we-serve/mission-heights-T8V 5R4.html">Mission Heights</a>
-            <a href="areas-we-serve/buckingham-T8V 3M7.html">Buckingham</a>
+            <div class="dd2-inner">
+              <a href="areas-we-serve/downtown-T8V 3A3.html">Downtown</a>
+              <a href="areas-we-serve/westgate-T8V 4K5.html">Westgate</a>
+              <a href="areas-we-serve/eastgate-T8V 6H2.html">Eastgate</a>
+              <a href="areas-we-serve/southgate-T8V 7M9.html">Southgate</a>
+              <a href="areas-we-serve/northgate-T8V 2B1.html">Northgate</a>
+              <a href="areas-we-serve/riverheights-T8V 5E4.html">Riverheights</a>
+              <a href="areas-we-serve/montrose-T8V 1G7.html">Montrose</a>
+              <a href="areas-we-serve/elmwood-T8V 3J2.html">Elmwood</a>
+              <a href="areas-we-serve/braeside-T8V 4P8.html">Braeside</a>
+              <a href="areas-we-serve/crystal-heights-T8V 6L5.html">Crystal Heights</a>
+              <a href="areas-we-serve/highland-park-T8V 8N3.html">Highland Park</a>
+              <a href="areas-we-serve/avondale-T8V 2H6.html">Avondale</a>
+              <a href="areas-we-serve/country-club-estates-T8V 7K1.html">Country Club Estates</a>
+              <a href="areas-we-serve/mission-heights-T8V 5R4.html">Mission Heights</a>
+              <a href="areas-we-serve/buckingham-T8V 3M7.html">Buckingham</a>
+            </div>
           </div>
         </div>
         <a href="blog/index.html" style="color:var(--blue);font-weight:600;font-size:14px;">Blog</a>
         <a href="index.html#contact" style="color:var(--blue);font-weight:600;font-size:14px;">Contact</a>
       </nav>
-      <a href="tel:(780) 833-8600" class="btn-blue" style="white-space:nowrap;"><i class="fa-solid fa-phone"></i> (780)
+      <a class="btn-blue" href="tel:(780) 833-8600" style="white-space:nowrap;"><i class="fa-solid fa-phone"></i> (780)
         833-8600</a>
     </div>
   </header>
-
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
@@ -865,22 +879,21 @@
         <p>Welcome to West Grande Prairie Dental — your trusted local dentist serving Grande Prairie and surrounding
           communities. We provide compassionate, expert dental care for the whole family.</p>
         <div class="hero-btns">
-          <a href="services/family-dentist-grande-prairie.html" class="btn-blue">View Our Services</a>
-          <a href="#contact" class="btn-ghost">Book Appointment</a>
+          <a class="btn-blue" href="services/family-dentist-grande-prairie.html">View Our Services</a>
+          <a class="btn-ghost" href="#contact">Book Appointment</a>
         </div>
       </div>
       <div class="hero-img fi">
-        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=85&w=1200"
-          alt="Professional Dental Environment - West Grande Prairie Dental" />
+        <img alt="Professional Dental Environment - West Grande Prairie Dental"
+          src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&amp;fit=crop&amp;q=85&amp;w=1200" />
       </div>
     </div>
     <div class="wave" style="line-height:0;margin-top:-2px;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 55">
-        <path fill="#ffffff" d="M0,36 C360,70 1080,0 1440,36 L1440,55 L0,55 Z" />
+      <svg viewbox="0 0 1440 55" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,36 C360,70 1080,0 1440,36 L1440,55 L0,55 Z" fill="#ffffff"></path>
       </svg>
     </div>
   </section>
-
   <!-- STATS -->
   <div class="stats-bar">
     <div class="stats-grid">
@@ -902,7 +915,6 @@
       </div>
     </div>
   </div>
-
   <!-- FEATURED SERVICES -->
   <section class="section" id="services" style="background:var(--white);">
     <div class="container">
@@ -914,77 +926,75 @@
       </div>
       <div class="svc-grid">
         <div class="svc-card fi">
-          <img class="svc-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80"
-            alt="Invisalign Grande Prairie" />
+          <img alt="Invisalign Grande Prairie" class="svc-img"
+            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&amp;q=80" />
           <h3>Invisalign</h3>
           <p>Straighten your teeth discreetly with clear, removable aligners custom-made for your smile.</p>
-          <a href="services/invisalign-grande-prairie.html" class="read-more">Read more <i
+          <a class="read-more" href="services/invisalign-grande-prairie.html">Read more <i
               class="fa-solid fa-chevron-right" style="font-size:11px;"></i></a>
         </div>
         <div class="svc-card fi">
-          <img class="svc-img" src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&q=80"
-            alt="Dental Implants Grande Prairie" />
+          <img alt="Dental Implants Grande Prairie" class="svc-img"
+            src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&amp;q=80" />
           <h3>Dental Implants</h3>
           <p>Permanent, natural-looking tooth replacements that restore your smile and quality of life.</p>
-          <a href="services/dental-implants-grande-prairie.html" class="read-more">Read more <i
+          <a class="read-more" href="services/dental-implants-grande-prairie.html">Read more <i
               class="fa-solid fa-chevron-right" style="font-size:11px;"></i></a>
         </div>
         <div class="svc-card fi">
-          <img class="svc-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80"
-            alt="Family Dentist Grande Prairie" />
+          <img alt="Family Dentist Grande Prairie" class="svc-img"
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&amp;q=80" />
           <h3>Family Dentist</h3>
           <p>Comprehensive dental care for every member of your family, from toddlers to seniors.</p>
-          <a href="services/family-dentist-grande-prairie.html" class="read-more">Read more <i
+          <a class="read-more" href="services/family-dentist-grande-prairie.html">Read more <i
               class="fa-solid fa-chevron-right" style="font-size:11px;"></i></a>
         </div>
         <div class="svc-card fi">
-          <img class="svc-img" src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=400&q=80"
-            alt="Teeth Whitening Grande Prairie" />
+          <img alt="Teeth Whitening Grande Prairie" class="svc-img"
+            src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=400&amp;q=80" />
           <h3>Teeth Whitening</h3>
           <p>Professional whitening treatments for a brighter, more confident smile in just one visit.</p>
-          <a href="services/teeth-whitening-grande-prairie.html" class="read-more">Read more <i
+          <a class="read-more" href="services/teeth-whitening-grande-prairie.html">Read more <i
               class="fa-solid fa-chevron-right" style="font-size:11px;"></i></a>
         </div>
       </div>
-
       <!-- ALL SERVICES -->
       <div class="fi" style="margin-top:50px;">
         <p class="sec-tag">All Services</p>
         <h2 class="sec-h2" style="font-size:32px;">Complete Dental Solutions</h2>
         <div class="all-svc-grid">
-          <a href="services/invisalign-grande-prairie.html" class="svc-chip">Invisalign</a>
-          <a href="services/dental-implants-grande-prairie.html" class="svc-chip">Dental Implants</a>
-          <a href="services/emergency-dentist-grande-prairie.html" class="svc-chip">Emergency Dentist</a>
-          <a href="services/family-dentist-grande-prairie.html" class="svc-chip">Family Dentist</a>
-          <a href="services/teeth-whitening-grande-prairie.html" class="svc-chip">Teeth Whitening</a>
-          <a href="services/root-canal-grande-prairie.html" class="svc-chip">Root Canal</a>
-          <a href="services/dental-veneers-grande-prairie.html" class="svc-chip">Dental Veneers</a>
-          <a href="services/dentures-grande-prairie.html" class="svc-chip">Dentures</a>
-          <a href="services/sedation-dentistry-grande-prairie.html" class="svc-chip">Sedation Dentistry</a>
-          <a href="services/wisdom-teeth-removal-grande-prairie.html" class="svc-chip">Wisdom Teeth Removal</a>
-          <a href="services/dental-crowns-grande-prairie.html" class="svc-chip">Dental Crowns</a>
-          <a href="services/childrens-dentist-grande-prairie.html" class="svc-chip">Childrens Dentist</a>
-          <a href="services/cosmetic-dentist-grande-prairie.html" class="svc-chip">Cosmetic Dentist</a>
-          <a href="services/botox-grande-prairie.html" class="svc-chip">Botox</a>
-          <a href="services/tmj-treatment-grande-prairie.html" class="svc-chip">TMJ Treatment</a>
-          <a href="services/dental-bridges-grande-prairie.html" class="svc-chip">Dental Bridges</a>
-          <a href="services/sleep-apnea-dentist-grande-prairie.html" class="svc-chip">Sleep Apnea</a>
-          <a href="services/mouth-guards-grande-prairie.html" class="svc-chip">Mouth Guards</a>
-          <a href="services/dental-hygiene-grande-prairie.html" class="svc-chip">Dental Hygiene</a>
-          <a href="services/all-on-4-dental-implants-grande-prairie.html" class="svc-chip">All-on-4 Implants</a>
+          <a class="svc-chip" href="services/invisalign-grande-prairie.html">Invisalign</a>
+          <a class="svc-chip" href="services/dental-implants-grande-prairie.html">Dental Implants</a>
+          <a class="svc-chip" href="services/emergency-dentist-grande-prairie.html">Emergency Dentist</a>
+          <a class="svc-chip" href="services/family-dentist-grande-prairie.html">Family Dentist</a>
+          <a class="svc-chip" href="services/teeth-whitening-grande-prairie.html">Teeth Whitening</a>
+          <a class="svc-chip" href="services/root-canal-grande-prairie.html">Root Canal</a>
+          <a class="svc-chip" href="services/dental-veneers-grande-prairie.html">Dental Veneers</a>
+          <a class="svc-chip" href="services/dentures-grande-prairie.html">Dentures</a>
+          <a class="svc-chip" href="services/sedation-dentistry-grande-prairie.html">Sedation Dentistry</a>
+          <a class="svc-chip" href="services/wisdom-teeth-removal-grande-prairie.html">Wisdom Teeth Removal</a>
+          <a class="svc-chip" href="services/dental-crowns-grande-prairie.html">Dental Crowns</a>
+          <a class="svc-chip" href="services/childrens-dentist-grande-prairie.html">Childrens Dentist</a>
+          <a class="svc-chip" href="services/cosmetic-dentist-grande-prairie.html">Cosmetic Dentist</a>
+          <a class="svc-chip" href="services/botox-grande-prairie.html">Botox</a>
+          <a class="svc-chip" href="services/tmj-treatment-grande-prairie.html">TMJ Treatment</a>
+          <a class="svc-chip" href="services/dental-bridges-grande-prairie.html">Dental Bridges</a>
+          <a class="svc-chip" href="services/sleep-apnea-dentist-grande-prairie.html">Sleep Apnea</a>
+          <a class="svc-chip" href="services/mouth-guards-grande-prairie.html">Mouth Guards</a>
+          <a class="svc-chip" href="services/dental-hygiene-grande-prairie.html">Dental Hygiene</a>
+          <a class="svc-chip" href="services/all-on-4-dental-implants-grande-prairie.html">All-on-4 Implants</a>
         </div>
       </div>
     </div>
   </section>
-
   <!-- QUOTE / NEWSLETTER -->
   <section class="section-quote" id="quote">
     <div class="quote-bg-circle"></div>
     <div class="container">
       <div class="quote-grid">
         <div class="fi" style="text-align:center;">
-          <img class="quote-img" src="https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?w=400&q=80"
-            alt="Dental care" />
+          <img alt="Dental care" class="quote-img"
+            src="https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?w=400&amp;q=80" />
         </div>
         <div class="fi">
           <h2 class="quote-content"
@@ -993,7 +1003,7 @@
           <p style="color:rgba(255,255,255,.9);font-size:15px;line-height:1.7;margin-bottom:22px;">Subscribe to our
             newsletter for dental tips, special offers, and clinic updates from West Grande Prairie Dental.</p>
           <form class="quote-form" onsubmit="handleSub(event)">
-            <input type="email" id="sub-email" placeholder="Enter your email address" required />
+            <input id="sub-email" placeholder="Enter your email address" required="" type="email" />
             <button type="submit">Subscribe Now</button>
           </form>
           <p
@@ -1003,7 +1013,6 @@
       </div>
     </div>
   </section>
-
   <!-- TESTIMONIALS -->
   <section class="section-testi" id="testimonials">
     <div class="container" style="text-align:center;">
@@ -1015,7 +1024,8 @@
         stories from real patients at West Grande Prairie Dental.</p>
       <div class="testi-grid">
         <div class="testi-card fi">
-          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&q=80" alt="Patient Jennifer" />
+          <img alt="Patient Jennifer"
+            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&amp;q=80" />
           <div class="stars">★★★★★</div>
           <h4>"I look &amp; feel great!"</h4>
           <p>The team at West GP Dental made me feel so comfortable. My teeth look amazing — I've never been more
@@ -1023,7 +1033,7 @@
           <p class="author">— Jennifer R., Grande Prairie</p>
         </div>
         <div class="testi-card fi">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80" alt="Patient Marcus" />
+          <img alt="Patient Marcus" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&amp;q=80" />
           <div class="stars">★★★★★</div>
           <h4>"Nothing but the truth!"</h4>
           <p>I used to be terrified of the dentist. Dr. Broyde and the staff changed everything. Patient, professional,
@@ -1031,7 +1041,7 @@
           <p class="author">— Marcus T., Grande Prairie</p>
         </div>
         <div class="testi-card fi">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="Patient Sarah" />
+          <img alt="Patient Sarah" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&amp;q=80" />
           <div class="stars">★★★★★</div>
           <h4>"Simply the best!"</h4>
           <p>My whole family comes here now. The pediatric care for my kids is wonderful — they actually look forward to
@@ -1041,14 +1051,13 @@
       </div>
     </div>
   </section>
-
   <!-- ABOUT -->
   <section class="section" id="about" style="background:var(--bg);">
     <div class="container">
       <div class="about-grid">
         <div class="fi">
-          <img class="about-img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80"
-            alt="West Grande Prairie Dental team" />
+          <img alt="West Grande Prairie Dental team" class="about-img"
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&amp;q=80" />
         </div>
         <div class="fi">
           <p class="sec-tag">About Us</p>
@@ -1086,7 +1095,94 @@
       </div>
     </div>
   </section>
+  <!-- MEET OUR DENTISTS -->
+  <section class="section" id="our-dentists" style="background:var(--white);">
+    <div class="container">
+      <div class="fi" style="text-align:center;margin-bottom:48px;">
+        <p class="sec-tag">Our Team</p>
+        <h2 class="sec-h2 sec-h2-blue">Meet Our Dentists</h2>
+        <p class="sec-p" style="max-width:560px;margin:0 auto;">Dedicated professionals committed to your comfort and
+          long-term dental health in Grande Prairie.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;">
 
+        <!-- Dr. Greg Broyde -->
+        <div class="fi"
+          style="background:#f8f9fa;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);transition:transform .25s,box-shadow .25s;"
+          onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 12px 36px rgba(0,0,0,.13)';"
+          onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 24px rgba(0,0,0,.07)';">
+          <div style="position:relative;overflow:hidden;height:280px;">
+            <img src="https://westgpdental.com/wp-content/uploads/2021/09/Gregory-Broyde-1.jpg"
+              alt="Dr. Greg Broyde - Dentist at West Grande Prairie Dental"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+            <div
+              style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(17,82,120,.7));padding:16px 20px;">
+              <span
+                style="color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;background:var(--teal);padding:4px 10px;border-radius:20px;">BSc,
+                DDS</span>
+            </div>
+          </div>
+          <div style="padding:24px;">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--blue);font-size:24px;margin-bottom:6px;">Dr.
+              Greg Broyde</h3>
+            <p style="color:var(--teal);font-weight:700;font-size:13px;margin-bottom:14px;">Founder &amp; Lead Dentist
+            </p>
+            <p style="color:var(--body);font-size:14px;line-height:1.75;margin-bottom:18px;">Born and raised in
+              Edmonton, Dr. Broyde attended the University of Alberta and practiced in Calgary for 4 years before
+              opening West GP Dental in Grande Prairie. He is passionate about patient education and ensuring every
+              patient feels at ease.</p>
+            <div style="border-top:1px solid #e0e0e0;padding-top:16px;">
+              <p style="font-size:13px;color:var(--body);margin-bottom:8px;"><i class="fa-solid fa-graduation-cap"
+                  style="color:var(--teal);margin-right:8px;"></i><strong>University of Alberta</strong> — Pharmacology
+                &amp; DDS</p>
+              <p style="font-size:13px;color:var(--body);margin-bottom:8px;"><i class="fa-solid fa-star"
+                  style="color:var(--teal);margin-right:8px;"></i>Advanced training in implants, root canals &amp;
+                wisdom teeth</p>
+              <p style="font-size:13px;color:var(--body);"><i class="fa-solid fa-id-badge"
+                  style="color:var(--teal);margin-right:8px;"></i>Alberta Dental Association</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Stephen Schalk -->
+        <div class="fi"
+          style="background:#f8f9fa;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);transition:transform .25s,box-shadow .25s;"
+          onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 12px 36px rgba(0,0,0,.13)';"
+          onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 24px rgba(0,0,0,.07)';">
+          <div style="position:relative;overflow:hidden;height:280px;">
+            <img src="https://westgpdental.com/wp-content/uploads/2021/09/stephan-portrait-1.jpg"
+              alt="Dr. Stephen Schalk - Dentist at West Grande Prairie Dental"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+            <div
+              style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(17,82,120,.7));padding:16px 20px;">
+              <span
+                style="color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;background:var(--teal);padding:4px 10px;border-radius:20px;">BSc,
+                DDS</span>
+            </div>
+          </div>
+          <div style="padding:24px;">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--blue);font-size:24px;margin-bottom:6px;">Dr.
+              Stephen Schalk</h3>
+            <p style="color:var(--teal);font-weight:700;font-size:13px;margin-bottom:14px;">Associate Dentist</p>
+            <p style="color:var(--body);font-size:14px;line-height:1.75;margin-bottom:18px;">Dr. Schalk studied at the
+              University of Alberta and has been living and practicing in Grande Prairie since 2014. He is devoted to
+              providing dedicated, patient-centered care with a focus on building lasting relationships with his
+              patients and their families.</p>
+            <div style="border-top:1px solid #e0e0e0;padding-top:16px;">
+              <p style="font-size:13px;color:var(--body);margin-bottom:8px;"><i class="fa-solid fa-graduation-cap"
+                  style="color:var(--teal);margin-right:8px;"></i><strong>University of Alberta</strong> — BMedSc &amp;
+                DDS</p>
+              <p style="font-size:13px;color:var(--body);margin-bottom:8px;"><i class="fa-solid fa-id-badge"
+                  style="color:var(--teal);margin-right:8px;"></i>Alberta Dental Association</p>
+              <p style="font-size:13px;color:var(--body);"><i class="fa-solid fa-id-badge"
+                  style="color:var(--teal);margin-right:8px;"></i>Canadian Dental Association</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- BLOG -->
   <section class="section" id="blog" style="background:var(--white);">
     <div class="container">
@@ -1098,8 +1194,8 @@
       </div>
       <div class="blog-grid">
         <article class="blog-card fi">
-          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80"
-            alt="Tooth extraction aftercare" />
+          <img alt="Tooth extraction aftercare"
+            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&amp;q=80" />
           <div class="blog-body">
             <p class="blog-cat">Care Tips</p>
             <h4><a href="blog/how-to-choose-dentist-grande-prairie.html" style="color:var(--blue);">How To Choose The
@@ -1108,7 +1204,8 @@
           </div>
         </article>
         <article class="blog-card fi">
-          <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=400&q=80" alt="Teeth whitening" />
+          <img alt="Teeth whitening"
+            src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=400&amp;q=80" />
           <div class="blog-body">
             <p class="blog-cat">Cosmetic</p>
             <h4><a href="blog/teeth-whitening-grande-prairie-for-summer.html" style="color:var(--blue);">Teeth Whitening
@@ -1117,7 +1214,7 @@
           </div>
         </article>
         <article class="blog-card fi">
-          <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=400&q=80" alt="Family dentist" />
+          <img alt="Family dentist" src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=400&amp;q=80" />
           <div class="blog-body">
             <p class="blog-cat">Family</p>
             <h4><a href="blog/family-dentist-grande-prairie-care.html" style="color:var(--blue);">Family Dentist Grande
@@ -1126,7 +1223,8 @@
           </div>
         </article>
         <article class="blog-card fi">
-          <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&q=80" alt="Dental implants" />
+          <img alt="Dental implants"
+            src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&amp;q=80" />
           <div class="blog-body">
             <p class="blog-cat">Implants</p>
             <h4><a href="blog/dental-implants-grande-prairie-cost-tips.html" style="color:var(--blue);">Dental Implants
@@ -1136,20 +1234,19 @@
         </article>
       </div>
       <div style="text-align:center;margin-top:32px;">
-        <a href="blog/index.html" class="btn-blue" style="display:inline-block;">View All Articles</a>
+        <a class="btn-blue" href="blog/index.html" style="display:inline-block;">View All Articles</a>
       </div>
     </div>
   </section>
-
   <!-- CONTACT -->
   <section class="section" id="contact" style="background:var(--bg);">
     <div class="container">
       <div class="contact-grid">
         <div class="fi">
           <div class="map-circle">
-            <iframe
+            <iframe allowfullscreen="" loading="lazy"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2278.690644981913!2d-118.8441848!3d55.1711883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5390916472c1eb19%3A0x35da25af7ded9426!2sWest%20Grande%20Prairie%20Dental%20-%20Westgate!5e0!3m2!1sen!2sca!4v1770372276920!5m2!1sen!2sca"
-              allowfullscreen loading="lazy" style="border:0;"></iframe>
+              style="border:0;"></iframe>
           </div>
         </div>
         <div class="fi">
@@ -1191,28 +1288,26 @@
       </div>
     </div>
   </section>
-
   <!-- ALL MAPS -->
   <section class="maps-section" id="locations">
     <div class="container">
-      <div style="text-align:center;margin-bottom:32px;" class="fi">
+      <div class="fi" style="text-align:center;margin-bottom:32px;">
         <p class="sec-tag">Visit Us</p>
         <h2 class="sec-h2" style="font-size:38px;">Our Locations</h2>
       </div>
       <div class="maps-two-col">
-        <div class="map-box"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2278.690644981913!2d-118.8441848!3d55.1711883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5390916472c1eb19%3A0x35da25af7ded9426!2sWest%20Grande%20Prairie%20Dental%20-%20Westgate!5e0!3m2!1sen!2sca!4v1770372276920!5m2!1sen!2sca"
-            allowfullscreen loading="lazy"></iframe></div>
-        <div class="map-box"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18222.891808925062!2d-118.84091815948159!3d55.185692842838996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539095f38e205133%3A0xcd113d0e9f5659a5!2sWest%20Grande%20Prairie%20Dental%20-%20Trader%20Ridge!5e0!3m2!1sen!2sca!4v1770372312769!5m2!1sen!2sca"
-            allowfullscreen loading="lazy"></iframe></div>
+        <div class="map-box"><iframe allowfullscreen="" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2278.690644981913!2d-118.8441848!3d55.1711883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5390916472c1eb19%3A0x35da25af7ded9426!2sWest%20Grande%20Prairie%20Dental%20-%20Westgate!5e0!3m2!1sen!2sca!4v1770372276920!5m2!1sen!2sca"></iframe>
+        </div>
+        <div class="map-box"><iframe allowfullscreen="" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18222.891808925062!2d-118.84091815948159!3d55.185692842838996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539095f38e205133%3A0xcd113d0e9f5659a5!2sWest%20Grande%20Prairie%20Dental%20-%20Trader%20Ridge!5e0!3m2!1sen!2sca!4v1770372312769!5m2!1sen!2sca"></iframe>
+        </div>
       </div>
       <div class="map-box" style="height:260px;"><iframe
           src="https://www.google.com/maps/d/embed?mid=1QyfgRUzzGTsBkUw0Ticscf_fI35Qlmk"
           style="width:100%;height:100%;border:0;"></iframe></div>
     </div>
   </section>
-
   <!-- FOOTER -->
   <footer>
     <div class="container">
@@ -1232,21 +1327,21 @@
         </div>
         <div>
           <h4 style="font-weight:700;color:var(--blue);font-size:15px;margin-bottom:16px;">Services</h4>
-          <a href="services/invisalign-grande-prairie.html" class="footer-link">Invisalign</a>
-          <a href="services/dental-implants-grande-prairie.html" class="footer-link">Dental Implants</a>
-          <a href="services/emergency-dentist-grande-prairie.html" class="footer-link">Emergency Dentist</a>
-          <a href="services/family-dentist-grande-prairie.html" class="footer-link">Family Dentist</a>
-          <a href="services/teeth-whitening-grande-prairie.html" class="footer-link">Teeth Whitening</a>
-          <a href="services/dental-crowns-grande-prairie.html" class="footer-link">Dental Crowns</a>
-          <a href="services/cosmetic-dentist-grande-prairie.html" class="footer-link">Cosmetic Dentist</a>
+          <a class="footer-link" href="services/invisalign-grande-prairie.html">Invisalign</a>
+          <a class="footer-link" href="services/dental-implants-grande-prairie.html">Dental Implants</a>
+          <a class="footer-link" href="services/emergency-dentist-grande-prairie.html">Emergency Dentist</a>
+          <a class="footer-link" href="services/family-dentist-grande-prairie.html">Family Dentist</a>
+          <a class="footer-link" href="services/teeth-whitening-grande-prairie.html">Teeth Whitening</a>
+          <a class="footer-link" href="services/dental-crowns-grande-prairie.html">Dental Crowns</a>
+          <a class="footer-link" href="services/cosmetic-dentist-grande-prairie.html">Cosmetic Dentist</a>
         </div>
         <div>
           <h4 style="font-weight:700;color:var(--blue);font-size:15px;margin-bottom:16px;">Quick Links</h4>
-          <a href="index.html" class="footer-link">Home</a>
-          <a href="blog/index.html" class="footer-link">Blog</a>
-          <a href="index.html#contact" class="footer-link">Contact</a>
-          <a href="index.html#locations" class="footer-link">Locations</a>
-          <a href="https://westgpdental.com/" class="footer-link" target="_blank" rel="noopener">grande prairie dentist
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="blog/index.html">Blog</a>
+          <a class="footer-link" href="index.html#contact">Contact</a>
+          <a class="footer-link" href="index.html#locations">Locations</a>
+          <a class="footer-link" href="https://westgpdental.com/" rel="noopener" target="_blank">grande prairie dentist
             near me</a>
         </div>
         <div>
@@ -1260,7 +1355,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p style="font-size:13px;color:rgba(255,255,255,.7);">&copy; 2025 West Grande Prairie Dental. All rights
+        <p style="font-size:13px;color:rgba(255,255,255,.7);">© 2025 West Grande Prairie Dental. All rights
           reserved.</p>
         <div style="display:flex;gap:10px;">
           <a href="#" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.15);
@@ -1273,13 +1368,11 @@
       </div>
     </div>
   </footer>
-
   <!-- SUBSCRIBE BAR -->
   <div class="sub-bar"
     onclick="document.getElementById('sub-email').focus();document.getElementById('quote').scrollIntoView({behavior:'smooth'});">
     <i class="fa-regular fa-envelope"></i> Never miss new launches! Subscribe!
   </div>
-
   <script>
     // Fade-in on scroll
     const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); }); }, { threshold: .1 });
